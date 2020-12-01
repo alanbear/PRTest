@@ -1,0 +1,22 @@
+version: 0.2 # code build 組建規格版本 0.2，勿隨意修改
+env:
+  variables:
+    VERSION: 1
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - yum update -y
+      - yum install zip -y
+      - yum install jq -y
+  pre_build:
+    commands:
+      - echo 'pre_build'
+  build:
+    commands:
+      - echo 'build'
+      - echo $VERSION
+  post_build:
+    commands:
+      - echo 'post_build'
