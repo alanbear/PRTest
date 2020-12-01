@@ -6,10 +6,6 @@ phases:
   install:
     runtime-versions:
       python: 3.7
-    commands:
-      - yum update -y
-      - yum install zip -y
-      - yum install jq -y
   pre_build:
     commands:
       - echo 'pre_build'
