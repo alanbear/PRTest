@@ -1,7 +1,7 @@
 version: 0.2 # code build 組建規格版本 0.2，勿隨意修改
 env:
   variables:
-    VERSION: 2
+    VERSION: 3
 phases:
   install:
     runtime-versions:
